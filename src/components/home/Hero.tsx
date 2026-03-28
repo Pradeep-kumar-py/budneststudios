@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <header className="relative min-h-[100vh] sm:min-h-[90vh] flex items-center overflow-hidden pt-20 sm:pt-0">
       <div className="absolute inset-0">
-        <Image alt="Premium digital workspace" className="object-cover" src="/hero-bg.jpg" fill priority sizes="100vw" />
+        <Image alt="Premium digital workspace" className="object-cover" src="/hero-bg.webp" fill priority sizes="100vw" />
         <div className="absolute inset-0 hero-overlay"></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10 w-full">
