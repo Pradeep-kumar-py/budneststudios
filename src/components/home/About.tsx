@@ -37,7 +37,7 @@ export default function About() {
           </div>
           <div className="relative order-first md:order-last">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative">
-              <Image alt="Professional Studio Space" className="object-cover grayscale-[10%] sepia-[5%] hover:scale-105 transition-transform duration-700" src="/studio.jpg" fill />
+              <Image alt="Professional Studio Space" className="object-cover grayscale-[10%] sepia-[5%] hover:scale-105 transition-transform duration-700" src="/studio.jpg" fill sizes="(min-width: 768px) 50vw, 100vw" />
             </div>
             <div className="absolute -bottom-6 -left-6 sm:-bottom-10 sm:-left-10 bg-primary p-8 sm:p-12 rounded-3xl shadow-2xl border border-primary-container">
               <p className="text-on-primary font-headline text-4xl sm:text-5xl font-extrabold italic">10+</p>

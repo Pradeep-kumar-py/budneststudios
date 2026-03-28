@@ -16,7 +16,7 @@ export default function Portfolio() {
           {/* Project 1 */}
           <div className="group cursor-pointer">
             <div className="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl mb-6 sm:mb-8 bg-surface-container relative shadow-lg">
-              <Image alt="SaaS Dashboard Project" className="object-cover group-hover:scale-110 transition-transform duration-700" src="/port1.jpg" fill />
+              <Image alt="SaaS Dashboard Project" className="object-cover group-hover:scale-110 transition-transform duration-700" src="/port1.jpg" fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center backdrop-blur-[2px]">
                 <span className="bg-white text-primary px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold text-xs sm:text-sm shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Case Study</span>
               </div>
@@ -27,7 +27,7 @@ export default function Portfolio() {
           {/* Project 2 */}
           <div className="group cursor-pointer">
             <div className="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl mb-6 sm:mb-8 bg-surface-container relative shadow-lg">
-              <Image alt="Mobile App Interface" className="object-cover group-hover:scale-110 transition-transform duration-700" src="/port2.jpg" fill />
+              <Image alt="Mobile App Interface" className="object-cover group-hover:scale-110 transition-transform duration-700" src="/port2.jpg" fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center backdrop-blur-[2px]">
                 <span className="bg-white text-primary px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold text-xs sm:text-sm shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Case Study</span>
               </div>
@@ -38,7 +38,7 @@ export default function Portfolio() {
           {/* Project 3 */}
           <div className="group cursor-pointer">
             <div className="aspect-[4/3] overflow-hidden rounded-2xl sm:rounded-3xl mb-6 sm:mb-8 bg-surface-container relative shadow-lg">
-              <Image alt="Business Website" className="object-cover group-hover:scale-110 transition-transform duration-700" src="/port3.jpg" fill />
+              <Image alt="Business Website" className="object-cover group-hover:scale-110 transition-transform duration-700" src="/port3.jpg" fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" />
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center backdrop-blur-[2px]">
                 <span className="bg-white text-primary px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold text-xs sm:text-sm shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Case Study</span>
               </div>
