@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface-container-high: #e5e9e8;
+  --color-outline: #767c7b;
+  --color-surface: #fcfcfb;
+  --color-secondary-fixed: #fadcd2;
+  --color-surface-container: #ebeeed;
+  --color-background: #fcfcfb;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-fixed-variant: #72544e;
+  --color-tertiary-dim: #59524f;
+  --color-on-surface: #24211f;
+  --color-tertiary: #655d5a;
+  --color-surface-container-low: #f7f7f5;
+  --color-tertiary-fixed: #faeeea;
+  --color-error: #9f403d;
+  --color-on-background: #24211f;
+  --color-surface-tint: #4b3832;
+  --color-on-secondary-fixed: #4e3b34;
+  --color-surface-bright: #fcfcfb;
+  --color-on-primary-fixed: #533933;
+  --color-on-tertiary: #fff7f5;
+  --color-inverse-surface: #0c0f0e;
+  --color-on-primary-container: #fdf8f7;
+  --color-secondary: #705a52;
+  --color-on-error: #fff7f6;
+  --color-outline-variant: #adb3b2;
+  --color-on-error-container: #752121;
+  --color-surface-container-highest: #dee4e2;
+  --color-primary-fixed: #ffdad2;
+  --color-on-surface-variant: #5a5350;
+  --color-on-tertiary-fixed: #4e4644;
+  --color-on-primary: #ffffff;
+  --color-error-dim: #4e0309;
+  --color-secondary-fixed-dim: #ebcec4;
+  --color-on-secondary-fixed-variant: #6c574f;
+  --color-on-tertiary-container: #605855;
+  --color-on-tertiary-fixed-variant: #6b6360;
+  --color-surface-dim: #d4dcda;
+  --color-primary-fixed-dim: #f3ccc3;
+  --color-tertiary-fixed-dim: #ece0dc;
+  --color-surface-variant: #dee4e2;
+  --color-inverse-on-surface: #9c9d9c;
+  --color-tertiary-container: #faeeea;
+  --color-primary-container: #4b3832;
+  --color-secondary-container: #fadcd2;
+  --color-secondary-dim: #634e47;
+  --color-inverse-primary: #eec6bd;
+  --color-primary-dim: #4b3832;
+  --color-on-secondary-container: #624d45;
+  --color-error-container: #fe8983;
+  --color-primary: #4b3832;
+  --color-on-secondary: #fff7f5;
+
+  --font-headline: var(--font-manrope);
+  --font-body: var(--font-inter);
+  --font-label: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary-premium {
+    @apply bg-primary text-on-primary;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn-primary-premium:hover {
+    background: #392a26;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(75, 56, 50, 0.3);
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+  }
 }
