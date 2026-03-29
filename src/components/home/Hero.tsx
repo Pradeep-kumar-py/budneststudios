@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <header className="relative min-h-[100vh] sm:min-h-[90vh] flex items-center overflow-hidden pt-20 sm:pt-0">
+    <header id="home" className="relative min-h-[100vh] sm:min-h-[90vh] flex items-center overflow-hidden pt-20 sm:pt-0">
       <div className="absolute inset-0">
         <Image alt="Premium digital workspace" className="object-cover" src="/hero-bg.webp" fill priority sizes="100vw" />
         <div className="absolute inset-0 hero-overlay"></div>
